@@ -1,0 +1,44 @@
+table {
+	margin: 10px;
+}
+td {
+	padding: 0.2em;
+}
+html {
+	margin: 0;
+	height: 100%;
+	background: black;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: right;
+}
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+output {
+	display: block;
+	font: 2em/2 sans-serif;
+	margin-right: 0.5em;
+}
+#slider {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	width: 100%;
+	background: none;
+}
+#slider::track {
+	background: rgba(255,255,255,.1);
+  height: 50px;
+}
+
+#slider::thumb {
+  background: #4286be;
+  width: 50px;
+  height: 100%;
+}
