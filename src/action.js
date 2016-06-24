@@ -1,6 +1,6 @@
-var rate = 25;
+var rate = 40;
 var precalcValues = [5, 10, 20, 50, 100, 150, 200, 500, 700, 1000];
-var baseCur = 'k ₫';
+var baseCur = ' ฿';
 var myCur = ' €';
 
 var slider = document.getElementById('slider');
