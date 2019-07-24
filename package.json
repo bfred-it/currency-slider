@@ -2,23 +2,16 @@
   "name": "currency-slider",
   "version": "1.0.0",
   "description": "A personal app to quickly convert currencies. Not automatically updated.",
+  "repository": "fregante/currency-slider",
+  "license": "ISC",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "main": "none",
   "scripts": {
+    "build": "npm run build-css; npm run build-html",
     "build-css": "postcss --use postcss-input-style --use cssnano src/style.css > src/style.min.css",
     "build-html": "inliner src/index.html > index.html",
-    "build": "npm run build-css; npm run build-html",
     "watch": "npm run build-css -- --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bfred-it/currency-slider.git"
-  },
-  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bfred-it/currency-slider/issues"
-  },
-  "homepage": "https://github.com/bfred-it/currency-slider#readme",
   "devDependencies": {
     "cssnano": "^3.5.2",
     "inliner": "^1.8.1",
